@@ -1,0 +1,17 @@
+python quant_task_glue.py \
+        --data_dir data \
+        --model_dir /tmp/transformer \
+        --task_name  sts-b \
+        --output_dir output \
+        --weight_bits 1 \
+        --input_bits 1 \
+        --pred_distill \
+        --intermediate_distill \
+        --value_distill \
+        --context_distill \
+        --att_distill \
+        --query_distill \
+        --key_distill \
+        --save_fp_model \
+        --ground_truth \
+        --save_quantized_model
